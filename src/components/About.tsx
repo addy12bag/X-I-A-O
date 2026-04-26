@@ -72,7 +72,7 @@ export default function About() {
               >
                 <div className="relative w-56 h-56 md:w-64 md:h-64 lg:w-72 lg:h-72 rounded-full overflow-hidden shadow-[0_0_40px_-10px_rgba(37,99,235,0.2)] ring-2 ring-primary/30 bg-muted border-[6px] border-background">
                   <img 
-                    src="/images/profile.jpg" 
+                    src={`${import.meta.env.BASE_URL}images/profile.jpg`}
                     alt="Sayantan Bag" 
                     className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700"
                   />

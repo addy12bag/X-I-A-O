@@ -13,15 +13,15 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-[calc(100dvh-6rem)] flex flex-col justify-center overflow-hidden"
+      className="relative flex flex-col justify-center overflow-hidden py-20 min-h-[calc(100dvh-4rem)] md:py-0"
     >
       {/* 3D Orb */}
       <motion.div
         style={{ y, opacity }}
-        className="absolute -top-32 -right-32 w-[600px] h-[600px] rounded-full orb-glow opacity-80 mix-blend-screen pointer-events-none"
+        className="absolute -top-16 -right-16 w-[300px] h-[300px] md:-top-32 md:-right-32 md:w-[600px] md:h-[600px] rounded-full orb-glow opacity-80 mix-blend-screen pointer-events-none"
       />
 
-      <div className="container px-6 mx-auto flex-1 flex flex-col justify-center pt-20">
+      <div className="container px-6 mx-auto flex-1 flex flex-col justify-center">
         {/* Top label row */}
         <div className="flex justify-between items-center mb-8 text-muted-foreground font-mono text-xs md:text-sm uppercase tracking-widest">
           <span className="text-primary">— PORTFOLIO / 2026</span>
@@ -97,7 +97,7 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.9 }}
-          className="mt-auto pt-10 pb-8 border-t border-border/50 grid grid-cols-2 md:grid-cols-4 gap-6 font-mono text-xs md:text-sm text-muted-foreground"
+          className="mt-12 md:mt-auto pt-10 pb-8 border-t border-border/50 grid grid-cols-2 md:grid-cols-4 gap-6 font-mono text-xs md:text-sm text-muted-foreground"
         >
           <div className="flex flex-col gap-1">
             <span className="text-primary">* 01 /</span>

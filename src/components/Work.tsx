@@ -42,7 +42,7 @@ const projects = [
     status: "COMPLETED",
     description:
       "Deep learning solution for chest X-ray and audio analysis. 96.7% image accuracy, 91% audio accuracy. Integrated LLM for clinical insights generation and enhanced result interpretability.",
-    image: "/images/project-1.png",
+    image: `${import.meta.env.BASE_URL}images/project-1.png`,
     tags: ["Python", "TensorFlow", "Deep Learning", "CV"],
     github: "https://github.com/addy12bag",
     stats: [
@@ -58,7 +58,7 @@ const projects = [
     status: "COMPLETED",
     description:
       "NLP-based system to classify and prioritize citizen complaints with 97% accuracy, integrated into a Chrome extension for real-time analysis.",
-    image: "/images/project-2.png",
+    image: `${import.meta.env.BASE_URL}images/project-2.png`,
     tags: ["Python", "Scikit-learn", "Flask", "JS"],
     github: "https://github.com/addy12bag/Smart-Grievance-Analyzer-",
     stats: [
@@ -74,7 +74,7 @@ const projects = [
     status: "COMPLETED",
     description:
       "Hybrid ML–DL pipeline for arrhythmia classification on the MIT-BIH dataset. 97% (ML) and 93% (CNN) accuracy. ECG preprocessing and feature engineering.",
-    image: "/images/project-3.png",
+    image: `${import.meta.env.BASE_URL}images/project-3.png`,
     tags: ["PyTorch", "Keras", "Signal Processing"],
     github: "https://github.com/addy12bag/Arrhythmia-Prediction-",
     stats: [
@@ -90,7 +90,7 @@ const projects = [
     status: "COMPLETED",
     description:
       "Multi-class weather image classification with CNN in PyTorch — ~99% validation accuracy across Shine, Cloudy, Rain, Sunrise. Data augmentation, real-time monitoring.",
-    image: "/images/project-4.png",
+    image: `${import.meta.env.BASE_URL}images/project-4.png`,
     tags: ["PyTorch", "torchvision", "NumPy"],
     github: "https://github.com/addy12bag/Multi-Class-Weather-Classification_CNN",
     stats: [

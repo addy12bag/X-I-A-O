@@ -3,7 +3,13 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Terminal, X, Minus, Square } from "lucide-react";
 
 export default function SystemStatus() {
-  const [isVisible, setIsVisible] = useState(true);
+  const [isVisible, setIsVisible] = useState(() => {
+    // Collapsed by default on mobile, expanded on desktop
+    if (typeof window !== "undefined") {
+      return window.innerWidth >= 640; // sm breakpoint
+    }
+    return true;
+  });
   const [time, setTime] = useState("");
   const [dateStr, setDateStr] = useState("");
   const [githubRepos, setGithubRepos] = useState("...");
@@ -53,7 +59,7 @@ export default function SystemStatus() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: 20 }}
-        className="fixed bottom-6 left-6 z-50 w-72 bg-card border border-border/80 shadow-2xl flex flex-col overflow-hidden backdrop-blur-xl"
+        className="fixed bottom-4 left-4 z-50 w-60 sm:w-72 bg-card border border-border/80 shadow-2xl flex flex-col overflow-hidden backdrop-blur-xl"
       >
         {/* Header */}
         <div className="h-8 bg-muted border-b border-border/80 flex items-center justify-between px-3">

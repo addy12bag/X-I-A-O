@@ -19,7 +19,7 @@ const queryClient = new QueryClient();
 
 function Portfolio() {
   return (
-    <div className="min-h-[100dvh] w-full bg-background text-foreground flex flex-col relative" id="home">
+    <div className="min-h-[100dvh] w-full bg-background text-foreground flex flex-col relative overflow-x-hidden">
       <div className="absolute inset-0 blueprint-grid pointer-events-none opacity-50 z-0 mix-blend-screen" />
       <div className="absolute inset-0 blueprint-grid-lg pointer-events-none opacity-30 z-0 mix-blend-screen" />
       
